@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-background: #032535;
+  --clr-text: #ff9a00;
+  --clr-accent: rgb(218, 67, 2, 0.85);
+}
+
+body,
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--clr-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--clr-accent);
+}
+
+.clock__hour,
+.clock__minute,
+.clock__second {
+  color: var(--clr-text);
+}
+
+@media only screen and (max-width: 400px) {
+  .clock {
+    font-size: 3.5rem;
+  }
+}
